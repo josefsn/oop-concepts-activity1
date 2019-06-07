@@ -4,7 +4,7 @@ public class Car
     public String name;
     public boolean moving;
     public int direction;
-    public Driver driver;
+    public Driver currentDriver;
 
     public Car(String name){
         this.name = name;
@@ -20,7 +20,7 @@ public class Car
         if (moving) {
             System.out.println("The " + name + " is already moving!!!");
         }
-        else if (driver == null){
+        else if (currentDriver == null){
             System.out.println("The " + name + " can't move without a driver!!!");
         }
         else {
@@ -45,7 +45,7 @@ public class Car
         if (!moving) {
             System.out.println("The " + name + " can't turn left before start moving!!!");
         }
-        else if (driver == null){
+        else if (currentDriver == null){
             System.out.println("The " + name + " can't turn left without a driver!!!");
         }
         else {
@@ -58,7 +58,7 @@ public class Car
         if (!moving) {
             System.out.println("The " + name + " can't turn left before start moving!!!");
         }
-        else if (driver == null){
+        else if (currentDriver == null){
             System.out.println("The " + name + " can't turn left without a driver!!!");
         }
         else {
@@ -74,16 +74,16 @@ public class Car
         else {
             switch(direction % 360){
                 case 0:
-                    System.out.println(driver.name + " is driving the " + name + " and is moving east.");
+                    System.out.println(currentDriver.name + " is driving the " + name + " and is moving east.");
                     break;
                 case -270: case 90:
-                    System.out.println(driver.name + " is driving the " + name + " and is moving north.");
+                    System.out.println(currentDriver.name + " is driving the " + name + " and is moving north.");
                     break;
                 case -180: case 180:
-                    System.out.println(driver.name + " is driving the " + name + " and is moving west.");
+                    System.out.println(currentDriver.name + " is driving the " + name + " and is moving west.");
                     break;
                 case -90: case 270:
-                    System.out.println(driver.name + " is driving the " + name + " and is moving south.");
+                    System.out.println(currentDriver.name + " is driving the " + name + " and is moving south.");
                     break;
             }
         }

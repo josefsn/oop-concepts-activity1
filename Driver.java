@@ -18,7 +18,7 @@ public class Driver
         }
         else {
             currentCar = car;
-            currentCar.driver = this;
+            currentCar.currentDriver = this;
             System.out.println(name + " just entered the " + currentCar.name + "!!!");
         }
     }
