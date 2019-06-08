@@ -25,7 +25,7 @@ public class Driver
     
     public void exitCar(){
         if (currentCar.moving){
-            System.out.println(name + " can't exit the " + currentCar.name + " becaus it's moving!!!");
+            System.out.println(name + " can't exit the " + currentCar.name + " because it's moving!!!");
         }
         else {
             System.out.println(name + " exited the " + currentCar.name + ".");

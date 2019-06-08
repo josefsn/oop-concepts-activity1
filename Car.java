@@ -49,20 +49,20 @@ public class Car
             System.out.println("The " + name + " can't turn left without a driver!!!");
         }
         else {
-            direction -= 90;
+            direction += 90;
             showMovement();
         }
     }
     
     public void turnRight(){
         if (!moving) {
-            System.out.println("The " + name + " can't turn left before start moving!!!");
+            System.out.println("The " + name + " can't turn right before start moving!!!");
         }
         else if (currentDriver == null){
-            System.out.println("The " + name + " can't turn left without a driver!!!");
+            System.out.println("The " + name + " can't turn right without a driver!!!");
         }
         else {
-            direction += 90;
+            direction -= 90;
             showMovement();
         }
     }
