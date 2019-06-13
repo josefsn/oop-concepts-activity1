@@ -49,7 +49,7 @@ public class Car
             System.out.println("The " + name + " can't turn left without a driver!!!");
         }
         else {
-            direction += 90;
+            direction -= 90;
             showMovement();
         }
     }
@@ -62,7 +62,7 @@ public class Car
             System.out.println("The " + name + " can't turn right without a driver!!!");
         }
         else {
-            direction -= 90;
+            direction += 90;
             showMovement();
         }
     }
